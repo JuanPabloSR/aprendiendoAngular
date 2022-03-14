@@ -5,7 +5,7 @@
   <hr />
   <form class="form-row">
     <div class="form-group col-md-2">
-      <label for="nombre">Nombre</label>
+      <label for="nombre" class="sr-only"></label>
       <input
         type="text"
         name="nombre"
@@ -14,6 +14,26 @@
         class="form-control" [(ngModel)] = "nombreInput"
       />
     </div>
+
+    <div class="form-group col-md-2">
+      <label for="apellido" class="sr-only"></label>
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        placeholder="apellido"
+        class="form-control" [(ngModel)] = "apellidoInput"
+      />
+    </div>
+
+    <div>
+      <div class="col">
+        <button type="submit" class="btn btn-primary" (click)="agregarPersona()">
+          Agregar
+        </button>
+      </div>
+    </div>
+
   </form>
 </div>
 
