@@ -1,0 +1,37 @@
+<form class="row g-3">
+  <div class="col-auto">
+    <label for="nombre" class="visually-hidden"></label>
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      placeholder="Nombre"
+      class="form-control"
+      #nombreInput
+    />
+  </div>
+
+  <div class="col-auto">
+    <label for="apellido" class="visually-hidden"></label>
+    <input
+      type="text"
+      name="apellido"
+      id="apellido"
+      placeholder="apellido"
+      class="form-control"
+      #apellidoInput
+    />
+  </div>
+
+  <div>
+    <div class="col-auto">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="agregarPersona()"
+      >
+        Agregar
+      </button>
+    </div>
+  </div>
+</form>
